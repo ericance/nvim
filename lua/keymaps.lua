@@ -21,8 +21,11 @@ vim.keymap.set('n', '<C-j>', '<C-w>j', { desc = 'Move to below split' })
 vim.keymap.set('n', '<C-k>', '<C-w>k', { desc = 'Move to above split' })
 vim.keymap.set('n', '<C-l>', '<C-w>l', { desc = 'Move to right split' })
 
--- Fuzzy find
--- vim.keymap.set('n', '<leader>sk', builtin.keymaps)
+-- Neotree
+vim.keymap.set('n', '\\', '<Cmd>Neotree reveal<CR>', { desc = 'Neo-tree reveal', silent = true })
+local builtin = require 'telescope.builtin'
+vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = '[F]ind [F]iles' })
+vim.keymap.set('n', '<leader>sk', builtin.keymaps)
 
 
 

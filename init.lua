@@ -1,7 +1,7 @@
 -- Ericance Neovim Configuration
+require("plugins")
 require("options")
 require("keymaps")
-require("plugins.neo-tree")
 
 vim.lsp.enable('lua_ls')
 
