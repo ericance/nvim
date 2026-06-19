@@ -6,10 +6,6 @@ vim.keymap.set("n", "<Esc>", ":nohl<CR>", { desc = "Clear search highlight" })
 vim.keymap.set("n", ";", ":", { desc = "Swap ; with : for quick access" })
 vim.opt.clipboard = "unnamedplus" -- One clipboard
 
--- Nvim Tree
-vim.keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" }) -- toggle file explorer
-vim.keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file explorer" }) -- collapse file explorer
-
 -- Create splits
 vim.keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" })
 vim.keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" })
@@ -25,6 +21,7 @@ vim.keymap.set('n', '<C-l>', '<C-w>l', { desc = 'Move to right split' })
 vim.keymap.set('n', '\\', '<Cmd>Neotree reveal<CR>', { desc = 'Neo-tree reveal', silent = true })
 local builtin = require 'telescope.builtin'
 vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = '[F]ind [F]iles' })
+vim.keymap.set('n', '<leader>fr', builtin.oldfiles, { desc = '[F]ind [R]ecent' })
 vim.keymap.set('n', '<leader>sk', builtin.keymaps)
 
 

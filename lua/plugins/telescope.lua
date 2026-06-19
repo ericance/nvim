@@ -9,6 +9,4 @@ local telescope_plugins = {
 vim.pack.add(telescope_plugins)
 
 require('telescope').setup {}
-
-
 pcall(require('telescope').load_extension, 'fzf')
